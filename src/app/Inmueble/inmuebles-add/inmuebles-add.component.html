@@ -1,0 +1,32 @@
+<div class="container col-md-6">
+    <div class="card">
+        <div class="card-header">
+            <h3>:: Agregar Inmueble::</h3>
+        </div>
+        <div class="card-body">
+            <form action="">
+                <div class="form-group">
+                    <label for="">Tipo de inmueble: </label>
+                    <input type="text" class="form-control" [(ngModel)]="inmueble.tipo_de_inmueble" name="tipo_de_inmueble">
+                </div>
+                <div class="form-group">
+                    <label for="">Estado del inmueble: </label>
+                    <input type="text" class="form-control" [(ngModel)]="inmueble.estado_del_inmueble" name="estado_del_inmueble">
+                </div>
+                <div class="form-group">
+                    <label for="">Ubicacion: </label>
+                    <select class="form-control" [(ngModel)]="inmueble.ubicacion" name="ubicacion">
+                        <option *ngFor="let ubicacion of ubicacion" [value]="ubicacion.id_ubicacion_geo">{{ ubicacion.id_ubicacion_geo }}</option>
+                    </select> 
+                </div>
+                <div class="form-group">
+                    <label for="">Persona: </label>
+                    <select class="form-control" [(ngModel)]="inmueble.persona" name="persona">
+                        <option *ngFor="let persona of personas" [value]="persona.id_persona">{{ persona.nombre }}</option>
+                    </select>
+                </div>
+                <button (click)="Guardar(inmueble)" class="btn btn-danger" style="margin-top: 10px;">Guardar</button>
+            </form>
+        </div>
+    </div>
+</div>

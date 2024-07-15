@@ -1,0 +1,55 @@
+<head>
+  <link rel="stylesheet" href="./app.component.css">
+</head>
+<app-header></app-header>
+<main class="main">
+  <div class="content">
+    <div class="left-side">
+      <h1>Hola, Joseph</h1>
+      <p>Felicidades! Has entrado a tu página web de base de datos. 🎉</p>
+    </div>
+    <div class="divider" role="separator" aria-label="Divider"></div>
+    <div class="right-side">
+      <button (click)="Listar()" class="btn btn-info">Listar</button>
+      <button (click)="Nuevo()" class="btn btn-info" style="margin-left: 10px;">Nuevo</button>
+      <button (click)="ListarAnalisis_de_riesgo()" class="btn btn-info" style="margin-left: 10px;">Listar Análisis de riesgo</button>
+      <button (click)="NuevoAnalisis_de_riesgo()" class="btn btn-info" style="margin-top: 10px;">Nuevo Análisis de riesgo</button>
+      <button (click)="ListarArriendo()" class="btn btn-info" style="margin-left: 10px; margin-top: 10px;">Listar Arriendo</button>
+      <button (click)="NuevoArriendo()" class="btn btn-info" style="margin-top: 10px; margin-left: 10px; ">Nuevo Arriendo</button>
+      <button (click)="ListarAvaluo()" class="btn btn-info" style="margin-left: 10px; margin-top: 10px;">Listar Avaluo</button>
+      <button (click)="NuevoAvaluo()" class="btn btn-info" style="margin-top: 10px; margin-left: 10px; ">Nuevo Avaluo</button>
+      <button (click)="ListarCita()" class="btn btn-info" style="margin-left: 10px; margin-top: 10px;">Listar Cita</button>
+      <button (click)="NuevoCita()" class="btn btn-info" style="margin-top: 10px; margin-left: 10px; ">Nuevo Cita</button>
+      <button (click)="ListarInformacion_comercial()" class="btn btn-info" style="margin-left: 10px; margin-top: 10px;">Listar Informacion comercial</button>
+      <button (click)="NuevoInformacion_comercial()" class="btn btn-info" style="margin-top: 10px; margin-left: 10px; ">Nuevo Informacion comercial</button>
+      <button (click)="ListarPago_por_comision()" class="btn btn-info" style="margin-left: 10px; margin-top: 10px;">Listar Pago por comision</button>
+      <button (click)="NuevoPago_por_comision()" class="btn btn-info" style="margin-top: 10px; margin-left: 10px; ">Nuevo Pago por comision</button>
+      <button (click)="ListarPago_por_estudio()" class="btn btn-info" style="margin-left: 10px; margin-top: 10px;">Listar Pago por estudio</button>
+      <button (click)="NuevoPago_por_estudio()" class="btn btn-info" style="margin-top: 10px; margin-left: 10px; ">Nuevo Pago por estudio</button>
+      <button (click)="ListarPersona_arriendo()" class="btn btn-info" style="margin-left: 10px; margin-top: 10px;">Listar Personas arriendo</button>
+      <button (click)="NuevoPersona_arriendo()" class="btn btn-info" style="margin-top: 10px; margin-left: 10px; ">Nuevo Personas arriendo</button>
+      <button (click)="ListarPersona_compra()" class="btn btn-info" style="margin-left: 10px; margin-top: 10px;">Listar Personas compra</button>
+      <button (click)="NuevoPersona_compra()" class="btn btn-info" style="margin-top: 10px; margin-left: 10px; ">Nuevo Personas compra</button>
+      <button (click)="ListarPersona_venta()" class="btn btn-info" style="margin-left: 10px; margin-top: 10px;">Listar Personas venta</button>
+      <button (click)="NuevoPersona_venta()" class="btn btn-info" style="margin-top: 10px; margin-left: 10px; ">Nuevo Personas venta</button>
+      <button (click)="ListarSucursal()" class="btn btn-info" style="margin-left: 10px; margin-top: 10px;">Listar Sucursal</button>
+      <button (click)="NuevoSucursal()" class="btn btn-info" style="margin-top: 10px; margin-left: 10px; ">Nuevo Sucursal</button>
+      <button (click)="ListarCompra()" class="btn btn-info" style="margin-left: 10px; margin-top: 10px;">Listar Compra</button>
+      <button (click)="NuevoCompra()" class="btn btn-info" style="margin-top: 10px; margin-left: 10px; ">Nuevo Compra</button>
+      <button (click)="ListarCuenta_de_cobro()" class="btn btn-info" style="margin-left: 10px; margin-top: 10px;">Listar Cuenta de cobro</button>
+      <button (click)="NuevoCuenta_de_cobro()" class="btn btn-info" style="margin-top: 10px; margin-left: 10px; ">Nuevo Cuenta de cobro</button>
+      <button (click)="ListarInmobiliaria()" class="btn btn-info" style="margin-left: 10px; margin-top: 10px;">Listar Inmobiliaria</button>
+      <button (click)="NuevoInmobiliaria()" class="btn btn-info" style="margin-top: 10px; margin-left: 10px; ">Nuevo Inmobiliaria</button>
+      <button (click)="ListarInmuebles()" class="btn btn-info" style="margin-left: 10px; margin-top: 10px;">Listar Inmuebles</button>
+      <button (click)="NuevoInmuebles()" class="btn btn-info" style="margin-top: 10px; margin-left: 10px; ">Nuevo Inmuebles</button>
+
+    </div>
+  </div>
+</main>
+
+
+
+
+
+<router-outlet></router-outlet>
+<app-footer></app-footer>

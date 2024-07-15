@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h3>Cuenta de cobro</h3>
+        </div>
+        <div class="card-body">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Id </th>
+                        <th>Valor</th>
+                        <th>Arriendo</th>
+                        <th>Inquilino</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let cuenta of cuentas" class="text-center">
+                        <td>{{cuenta.id_cuenta_de_cobro}}</td>
+                        <td>{{cuenta.valor}}</td>
+                        <td>{{cuenta.arriendo}}</td>
+                        <td>{{cuenta.inquilino}}</td>
+                        <td>
+                            <button (click)="Editar(cuenta)" class="btn btn-warning">Editar</button>
+                            <button (click)="Delete(cuenta)" class="btn btn-danger" style="margin-left: 5px;">Borrar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

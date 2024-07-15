@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h3>Arriendo</h3>
+        </div>
+        <div class="card-body">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Id </th>
+                        <th>Descripción</th>
+                        <th>Inmueble</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let arriendo of arriendos" class="text-center">
+                        <td>{{arriendo.id_arriendo}}</td>
+                        <td>{{arriendo.descripcion}}</td>
+                        <td>{{arriendo.inmueble}}</td>
+
+                        <td>
+                            <button (click)="Editar(arriendo)" class="btn btn-warning">Editar</button>
+                            <button (click)="Delete(arriendo)" class="btn btn-danger" style="margin-left: 5px;">Borrar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+

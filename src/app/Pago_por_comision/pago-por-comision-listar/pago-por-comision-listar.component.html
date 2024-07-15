@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h3>Pagos por comisión</h3>
+        </div>
+        <div class="card-body">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Negocios cerrados</th>
+                        <th>Venta</th>
+                        <th>Empleado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let pago of pagos" class="text-center">
+                        <td>{{pago.id_pago_por_comision}}</td>
+                        <td>{{pago.negocios_cerrados}}</td>
+                        <td>{{pago.venta}}</td>
+                        <td>{{pago.empleado}}</td>
+                        <td>
+                            <button (click)="Editar(pago)" class="btn btn-warning">Editar</button>
+                            <button (click)="Delete(pago)" class="btn btn-danger" style="margin-left: 5px;">Borrar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

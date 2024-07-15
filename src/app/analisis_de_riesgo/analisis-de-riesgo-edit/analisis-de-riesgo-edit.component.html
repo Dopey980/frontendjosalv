@@ -1,0 +1,40 @@
+<div class="container col-md-6">
+    <div class="card">
+        <div class="card-header">
+            <h3>:: Editar Análisis de riesgo ::</h3>
+        </div>
+        <div class="card-body">
+            <form action="">
+                <div class="form-group">
+                    <label for="">Centrales de riesgo: </label>
+                    <select class="form-control" [(ngModel)]="analisis_de_riesgo.centrales_de_riesgo" name="centrales_de_riesgo">
+                        <option value="false">Reportado</option>
+                        <option value="true">Sin Incidencias</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="">Certificado de libertad: </label>
+                    <select class="form-control" [(ngModel)]="analisis_de_riesgo.certificado_de_libertad" name="certificado_de_libertad">
+                        <option value="false">Reportado</option>
+                        <option value="true">Sin Incidencias</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="">Lista Clinton: </label>
+                    <select class="form-control" [(ngModel)]="analisis_de_riesgo.lista_clinton" name="lista_clinton">
+                        <option value=" "></option>
+                        <option value="false">Reportado</option>
+                        <option value="true">Sin Incidencias</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="">Inmueble: </label>
+                    <select class="form-control" [(ngModel)]="analisis_de_riesgo.inmueble" name="inmueble">
+                      <option *ngFor="let inmueble of inmuebles" [value]="inmueble.id_inmueble">{{ inmueble.id_inmueble }}</option>
+                    </select>
+                </div>
+                <button (click)="Actualizar(analisis_de_riesgo)" class="btn btn-danger">Guardar</button>
+            </form>
+        </div>
+    </div>
+</div>

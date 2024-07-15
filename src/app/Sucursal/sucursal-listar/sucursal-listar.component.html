@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h3>Sucursales</h3>
+        </div>
+        <div class="card-body">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Nombre</th>
+                        <th>Telefono</th>
+                        <th>Inmobiliaria</th>
+                        <th>Ubicacion</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let sucursal of sucursal" class="text-center">
+                        <td>{{sucursal.id_sucursal}}</td>
+                        <td>{{sucursal.nombre}}</td>
+                        <td>{{sucursal.telefono}}</td>
+                        <td>{{sucursal.inmobiliaria}}</td>
+                        <td>{{sucursal.ubicacion}}</td>
+                        <td>
+                            <button (click)="Editar(sucursal)" class="btn btn-warning">Editar</button>
+                            <button (click)="Delete(sucursal)" class="btn btn-danger" style="margin-left: 5px;">Borrar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

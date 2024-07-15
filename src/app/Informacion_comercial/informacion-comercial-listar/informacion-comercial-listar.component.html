@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h3>Informacion comercial</h3>
+        </div>
+        <div class="card-body">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Id </th>
+                        <th>Comportamiento comercial</th>
+                        <th>Fuentes de ingreso</th>
+                        <th>Balance</th>
+                        <th>Comportamiento financiero</th>
+                        <th>Persona</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let informacion of informacion" class="text-center">
+                        <td>{{informacion.id_informacion_comercial}}</td>
+                        <td>{{informacion.comportamiento_comercial}}</td>
+                        <td>{{informacion.fuentes_de_ingreso}}</td>
+                        <td>{{informacion.balance}}</td>
+                        <td>{{informacion.comportamiento_financiero}}</td>
+                        <td>{{informacion.persona}}</td>
+
+                        <td>
+                            <button (click)="Editar(informacion)" class="btn btn-warning">Editar</button>
+                            <button (click)="Delete(informacion)" class="btn btn-danger" style="margin-left: 5px;">Borrar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

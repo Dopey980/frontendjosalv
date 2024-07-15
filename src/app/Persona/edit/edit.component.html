@@ -1,0 +1,40 @@
+<div class="container col-md-6">
+    <div class="card">
+        <div class="card-header">
+            <h3>:: Editar Personas ::</h3>
+        </div>
+        <div class="card-body">
+            <form action="">
+                <div class="form-group">
+                    <label for="">Nombre: </label>
+                    <input type="text" class="form-control" [(ngModel)]="persona.nombre" name="nombre">
+                </div>
+                <div class="form-group">
+                    <label for="">Apellido: </label>
+                    <input type="text" class="form-control" [(ngModel)]="persona.apellido" name="apellido">
+                </div>
+                <div class="form-group">
+                    <label for="">Documento: </label>
+                    <input type="text" class="form-control" [(ngModel)]="persona.documento" name="documento">
+                </div>
+                <div class="form-group">
+                    <label for="">Tipo de persona: </label>
+                    <select class="form-control" [(ngModel)]="persona.tipo_de_persona" name="tipo_de_persona">
+                      <option *ngFor="let tipo of tipos" [value]="tipo.id_tipo_persona">{{ tipo.tipo_persona }}</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="">Edad: </label>
+                    <input type="text" class="form-control" [(ngModel)]="persona.edad" name="edad">
+                </div>
+                <div class="form-group">
+                    <label for="">Sucursal: </label>
+                    <select class="form-control" [(ngModel)]="persona.sucursal" name="sucursal">
+                      <option *ngFor="let sucursal of sucursales" [value]="sucursal.id_sucursal">{{ sucursal.nombre }}</option>
+                    </select>
+                </div>
+                <button (click)="Actualizar(persona)" class="btn btn-danger">Guardar</button>
+            </form>
+        </div>
+    </div>
+</div>

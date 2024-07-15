@@ -1,0 +1,30 @@
+.navbar {
+    background-color: #f8bd0d;
+    color: white;
+    padding: 1rem;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+  
+  .navbar-nav {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    flex-direction: row;
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .nav-link:hover {
+    text-decoration: underline;
+  }
+  
+  .logo {
+    height: 130px; /* Ajusta el tamaño de la imagen */
+  
+  }

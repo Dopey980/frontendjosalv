@@ -1,0 +1,22 @@
+<div class="container col-md-6">
+    <div class="card">
+        <div class="card-header">
+            <h3>:: Agregar Arriendo::</h3>
+        </div>
+        <div class="card-body">
+            <form action="">
+                <div class="form-group">
+                    <label for="">Descripción: </label>
+                    <input type="text" class="form-control" [(ngModel)]="arriendo.descripcion" name="descripcion">
+                </div>
+                <div class="form-group">
+                    <label for="">Inmueble: </label>
+                    <select class="form-control" [(ngModel)]="arriendo.inmueble" name="inmueble">
+                      <option *ngFor="let inmueble of inmuebles" [value]="inmueble.id_inmueble">{{ inmueble.id_inmueble }}</option>
+                    </select>
+                </div>
+                <button (click)="Guardar(arriendo)" class="btn btn-danger" style="margin-top: 10px;">Guardar</button>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,32 @@
+<div class="container col-md-6">
+    <div class="card">
+        <div class="card-header">
+            <h3>:: Editar Personas compras ::</h3>
+        </div>
+        <div class="card-body">
+            <form action="">
+                <div class="form-group">
+                    <label for="">Nombre: </label>
+                    <input type="text" class="form-control" [(ngModel)]="sucursal.nombre" name="nombre">
+                </div>
+                <div class="form-group">
+                    <label for="">Telefono: </label>
+                    <input type="text" class="form-control" [(ngModel)]="sucursal.telefono" name="telefono">
+                </div>
+                <div class="form-group">
+                    <label for="">Inmobiliaria: </label>
+                    <select class="form-control" [(ngModel)]="sucursal.inmobiliaria" name="inmobiliaria">
+                        <option *ngFor="let inmobiliaria of inmobiliaria" [value]="inmobiliaria.id_inmobiliaria">{{ inmobiliaria.id_inmobiliaria }}</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="">Ubicacion: </label>
+                    <select class="form-control" [(ngModel)]="sucursal.ubicacion" name="ubicacion">
+                        <option *ngFor="let ubicacion of ubicacion" [value]="ubicacion.id_ubicacion_geo">{{ ubicacion.id_ubicacion_geo }}</option>
+                    </select>
+                </div>
+                <button (click)="Actualizar(sucursal)" class="btn btn-danger">Guardar</button>
+            </form>
+        </div>
+    </div>
+</div>

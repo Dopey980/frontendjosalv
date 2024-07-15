@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h3>Análisis de riesgo</h3>
+        </div>
+        <div class="card-body">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Id </th>
+                        <th>Centrales de riesgo</th>
+                        <th>Certificado de libertad</th>
+                        <th>Lista Clinton</th>
+                        <th>Inmueble</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let analisis_de_riesgo of analisis_de_riesgo" class="text-center">
+                        <td>{{analisis_de_riesgo.id_analisis_de_riesgo}}</td>
+                        <td>{{analisis_de_riesgo.centrales_de_riesgo}}</td>
+                        <td>{{analisis_de_riesgo.certificado_de_libertad}}</td>
+                        <td>{{analisis_de_riesgo.lista_clinton}}</td>
+                        <td>{{analisis_de_riesgo.inmueble}}</td>
+                        <td>
+                            <button (click)="Editar(analisis_de_riesgo)" class="btn btn-warning">Editar</button>
+                            <button (click)="Delete(analisis_de_riesgo)" class="btn btn-danger" style="margin-left: 5px;">Borrar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

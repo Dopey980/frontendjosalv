@@ -1,0 +1,29 @@
+.footer {
+    background-color: #f8bd0d;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .footer p {
+    margin: 0;
+  }
+  
+  .footer-nav {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+  
+  .footer-link {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-link:hover {
+    text-decoration: underline;
+  }

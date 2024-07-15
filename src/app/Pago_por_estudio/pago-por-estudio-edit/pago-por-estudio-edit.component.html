@@ -1,0 +1,38 @@
+<div class="container col-md-6">
+    <div class="card">
+        <div class="card-header">
+            <h3>:: Editar Pago por estudio ::</h3>
+        </div>
+        <div class="card-body">
+            <form action="">
+                <div class="form-group">
+                    <label for="">Cliente: </label>
+                    <select class="form-control" [(ngModel)]="pago.cliente" name="empleado">
+                        <option *ngFor="let persona of personas" [value]="persona.id_persona">{{ persona.nombre }}</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="">Pago: </label>
+                    <select class="form-control" [(ngModel)]="pago.empleado" name="empleado">
+                        <option value="true">Realizado</option>
+                        <option value="false">Sin realizar</option>
+                    </select>      
+                </div>
+                <div class="form-group">
+                    <label for="">Empleado: </label>
+                    <select class="form-control" [(ngModel)]="pago.empleado" name="empleado">
+                        <option *ngFor="let persona of personas" [value]="persona.id_persona">{{ persona.nombre }}</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="">Inmueble : </label>
+                    <select class="form-control" [(ngModel)]="pago.inmueble" name="venta">
+                        <option *ngFor="let inmueble of inmuebles" [value]="inmueble.id_inmueble">{{ inmueble.id_inmueble}}</option>
+                    </select> 
+                </div>
+                <button (click)="Guardar(pago)" class="btn btn-danger">Guardar</button>
+            </form>
+        </div>
+    </div>
+</div>
+

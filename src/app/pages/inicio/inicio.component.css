@@ -1,0 +1,246 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+    color: #0e2f4f;
+}
+
+.container{
+    width: 1200px;
+    max-width: 95%;
+    margin: 0 auto;
+}
+button{
+    display: inline-block;
+    outline: none;
+    border: none;
+    background-color: red;
+}
+
+.hero{
+    width: 100%;
+    height: 110vh;
+    background-color:#8efeea3d;
+    position: relative;
+    padding-top: 10vh ;
+}
+
+.hero .container{
+    height: 100%;
+    position: relative;
+}
+.hero .mid{
+    padding: 0 2%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero .mid .desc{
+    width: 40%;
+}
+.hero .mid .desc h2{
+   font-size: 1.8em;
+   font-weight: 400;
+   line-height: 1.3;
+   margin-bottom: 25px;
+}
+.hero .mid .desc p{
+    font-size: .95em;
+    margin-bottom: 35px;
+}
+.hero .mid .desc .cta a{
+    font-weight: 600;
+    padding: 8px 10px;
+    border: 2px solid #1f4f7e;
+    border-radius: 50px;
+    transition-duration: .3s;
+    text-align: center; 
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+}
+.hero .mid .desc .cta a:first-child{
+    background-color: #0e2f4f;
+    color: #ffffff;
+   
+}
+ .vender{
+    background-color: #0e2f4f;
+    color: #ffffff;
+    margin: 0 15px 10px 0; 
+}
+.alquilar{
+    background-color:  #f8bd0d;
+    color: #ffffff;
+    margin: 0 15px 10px 0;  
+}
+
+.hero .mid .placeholder{
+    width: 55%;
+    height: 350px;
+    background-color: rgb(17, 235, 235);
+    background-image: url(../../../assets/imgBanner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius:  15px 0 0 0;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-weight: bold;
+    color: #007bff;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+.cardsTotal{
+    display: flex;
+}
+ .titulo{
+    text-align: center;
+    padding:20px;
+ }
+
+ /* estoy haciendo el detalle de los comentarios de los clientes */
+ .card-usuario {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.cliente{
+    width: 150px;
+    height:150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.info p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.usersTotal{
+    display: flex;
+    margin: 30px;
+}
+.prueba_imagen{
+    width: 350px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+/* Vamos con ventas */
+.parrafo_ventas{
+    background:#0e2f4f;
+    color: #f8bd0d;
+    text-align: center;
+    margin: 120px;
+    padding: 90px;
+    font-weight: bold;
+    font-size: 65px;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.banner img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px;
+}
+.banner-content {
+    flex: 1;
+    text-align: center;
+
+}
+.banner-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.banner-paragraph {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.banner-button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    background-color: #0074D9;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+ /* Estilos para el contenedor del video */
+ .video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Proporción 16:9 para videos */
+    height: 0;
+    overflow: hidden;
+}
+
+.iframe{
+    text-align: center;
+}
+
+/* Estilos para el video */
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 60%;
+
+}

@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h3>Avaluo</h3>
+        </div>
+        <div class="card-body">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Id </th>
+                        <th>Precio del inmueble</th>
+                        <th>Inmueble</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let avaluo of avaluos" class="text-center">
+                        <td>{{avaluo.id_avaluo}}</td>
+                        <td>{{avaluo.precio_del_inmueble}}</td>
+                        <td>{{avaluo.inmueble}}</td>
+
+                        <td>
+                            <button (click)="Editar(avaluo)" class="btn btn-warning">Editar</button>
+                            <button (click)="Delete(avaluo)" class="btn btn-danger" style="margin-left: 5px;">Borrar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

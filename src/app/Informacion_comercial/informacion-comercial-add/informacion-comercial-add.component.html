@@ -1,0 +1,46 @@
+<div class="container col-md-6">
+    <div class="card">
+        <div class="card-header">
+            <h3>:: Agregar Informacion comercial::</h3>
+        </div>
+        <div class="card-body">
+            <form action="">
+                <div class="form-group">
+                    <label for="">Comportamiento comercial: </label>
+                    <select class="form-control" [(ngModel)]="informacion.comportamiento_comercial" name="comportamiento_comercial">
+                        <option value="true">Sin incidencias</option>
+                        <option value="false">Reportado</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="">Fuentes de ingreso: </label>
+                    <select class="form-control" [(ngModel)]="informacion.fuentes_de_ingreso" name="fuentes_de_ingreso">
+                        <option value="true">Sin incidencias</option>
+                        <option value="false">Reportado</option>
+                    </select>             
+                </div>
+                <div class="form-group">
+                    <label for="">Balance: </label>
+                    <select class="form-control" [(ngModel)]="informacion.balance" name="balance">
+                        <option value="true">Sin incidencias</option>
+                        <option value="false">Reportado</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="">Comportamiento financiero: </label>
+                    <select class="form-control" [(ngModel)]="informacion.comportamiento_financiero" name="comportamiento_financiero">
+                        <option value="true">Sin incidencias</option>
+                        <option value="false">Reportado</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="">Persona: </label>
+                    <select class="form-control" [(ngModel)]="informacion.persona" name="persona">
+                        <option *ngFor="let persona of personas" [value]="persona.id_persona">{{ persona.nombre }}</option>
+                    </select>
+                </div>
+                <button (click)="Guardar(informacion)" class="btn btn-danger" style="margin-top: 10px;">Guardar</button>
+            </form>
+        </div>
+    </div>
+</div>

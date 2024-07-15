@@ -1,0 +1,33 @@
+<div class="container col-md-6">
+    <div class="card">
+        <div class="card-header">
+            <h3>:: Agregar Personas de ventas::</h3>
+        </div>
+        <div class="card-body">
+            <form action="">
+                <div class="form-group">
+                    <label for="">Nombre: </label>
+                    <input type="text" class="form-control" [(ngModel)]="persona.nombre" name="nombre">
+                </div>
+                <div class="form-group">
+                    <label for="">Apellido: </label>
+                    <input type="text" class="form-control" [(ngModel)]="persona.apellido" name="apellido">
+                </div>
+                <div class="form-group">
+                    <label for="">Documento: </label>
+                    <input type="text" class="form-control" [(ngModel)]="persona.documento" name="documento">
+                </div>
+                <div class="form-group">
+                    <label for="">Edad: </label>
+                    <input type="text" class="form-control" [(ngModel)]="persona.edad" name="edad">
+                </div>
+                <div class="form-group">
+                    <label for="">Venta: </label>
+                    <select class="form-control" [(ngModel)]="persona.venta" name="compra">
+                      <option *ngFor="let venta of ventas" [value]="venta.id_venta">{{ venta.id_venta}}</option>
+                    </select>
+                </div>
+                <button (click)="Guardar(persona)" class="btn btn-danger">Guardar</button>
+            </form>
+        </div>
+    </div>
